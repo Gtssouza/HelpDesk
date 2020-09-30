@@ -40,7 +40,7 @@ if($usuario_autenticado){
 }else{
     $_SESSION['autenticado'] ='NAO';
     header('Location: index.php?login=erro'); 
-}
+}   
 
 
 ?>
