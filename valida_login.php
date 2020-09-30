@@ -1,4 +1,7 @@
 <?php
+
+//inicia a sessão
+session_start();
 /*
     print_r($_GET);
 
@@ -26,15 +29,17 @@ echo '</pre>';
 
 foreach($usuarios_app as $user){
     if($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']){
-        $usuario_autenticado = true;
+       $usuario_autenticado = true;
     }
     
 }
 
 if($usuario_autenticado){
     echo 'User autenticado';
+    $_SESSION['autenticado'] ='SIM';
 }else{
-    header('Location: index.php?login=erro');
+    $_SESSION['autenticado'] ='NAO';
+    header('Location: index.php?login=erro'); 
 }
 
 
