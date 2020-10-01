@@ -12,7 +12,7 @@
     $descricao = str_replace('#','-',$_POST['descricao']);
     //implode('#',$_POST);
 
-    $texto = $titulo.'#'.$categoria.'#'.$descricao;
+    $texto = $titulo.'#'.$categoria.'#'.$descricao.PHP_EOL;
     
     //http://php.net/manual/pt_BR/function.fopen.php
     //Abrindo o arquivo
