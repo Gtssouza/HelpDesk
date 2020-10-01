@@ -1,5 +1,5 @@
 <?php
-
+  //nao necessita de session_start pois validador_acesso ja possui
   require_once "validador_acesso.php";  
 
 ?>
