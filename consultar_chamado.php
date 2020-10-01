@@ -71,6 +71,7 @@
             <?php
               $chamado_dados=explode('#',$chamdo);
               //verifica se o perfil é o adm
+              //
               if($_SESSION['perfil_id'] == 2){
                 //mostra o registro somente do usuario que o fez
                 if($_SESSION['id'] != $chamado_dados[0]){
